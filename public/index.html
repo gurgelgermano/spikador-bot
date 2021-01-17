@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title></title>
+</head>
+
+<body>
+    <div id="somWave"> </div>
+    
+    <script src="https://cdn.socket.io/socket.io-3.0.1.min.js"></script>
+    <script src="Queue.js"></script>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const queue = new Queue();
+        const channel = params.get('channel') || '#mercuriogurgel';
+        const socket = io();
+        
+        socket.on('connect', () => {
+            socket.emit('joinRoom', channel);
+        })
+        socket.on('spikador', (base64) => {
+            queue.add(base64)
+            animation.play();
+            queue.play();
+        });
+        
+    </script>
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.5/lottie.min.js"></script>
+    <script src="sondLottie.js"></script>
+</body>
+
+</html>
