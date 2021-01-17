@@ -1,3 +1,5 @@
+![logo spikador](https://user-images.githubusercontent.com/74389154/104830749-72bc9b80-5860-11eb-9ef7-03093d2dd120.png)
+
 # !Spikador
 
 Bot para Twitch desenvolvido utilizando a biblioteca TMI.JS para reprodução de audios e conversão de texto-para-fala utilizando a api do google-tts.
