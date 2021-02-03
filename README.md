@@ -34,4 +34,4 @@ Para saber mais, a lista de códigos de idiomas fornecida pelo Google está em h
 
 # Escutando o Spikador
 
-Você pode escutar os comandos atraves do link http://localhost:3000/index.html?channel=**_SEU_CANAL_** e acrescentar como fonte de navegador no OBS ou seu programa de stream preferido.
+Você pode escutar os comandos atraves do link http://localhost:3000/index.html?channel=<SEU_CANAL> e acrescentar como fonte de navegador no OBS ou seu programa de stream preferido.
